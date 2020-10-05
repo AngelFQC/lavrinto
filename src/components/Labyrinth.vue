@@ -1,5 +1,5 @@
 <template>
-  <a-entity position="1 0 -13.5">
+  <a-entity position="1.5 0 -12.5">
     <labyrinth-wall v-for="(wallPosition, wallId) in wallsX"
                     :key="wallId"
                     :position="wallPosition"></labyrinth-wall>
@@ -47,7 +47,7 @@ const map = [
   [2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 2, 0, 2],
   [0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1],
   [2, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 2],
-  [1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ];
 
 export default {

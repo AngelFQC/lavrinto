@@ -3,8 +3,9 @@
          :height="$constant('WALL_HEIGHT')"
          :position="position"
          :rotation="rotation"
-         :width="$constant('WALL_WIDTH') + 0.24"
-         src="#wall"></a-box>
+         :width="$constant('WALL_WIDTH')"
+         src="#wall"
+         static-body></a-box>
 </template>
 
 <script>

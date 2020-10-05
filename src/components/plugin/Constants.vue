@@ -1,8 +1,8 @@
 <script>
 const Constants = {
   WALL_HEIGHT: 4,
-  WALL_WIDTH: 2,
-  WALL_DEPTH: 0.25,
+  WALL_WIDTH: 3,
+  WALL_DEPTH: 0.5,
 }
 
 Constants.install = function (Vue) {

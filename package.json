@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "aframe": "^1.0.4",
+    "aframe-extras": "^6.1.1",
+    "aframe-physics-system": "^4.0.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
