@@ -48,7 +48,8 @@ export default {
         } else if (2 === firstMap[x][y]) {
           this.wallsY.push(`${positionX} ${positionY} ${positionZ}`);
         } else if (3 === firstMap[x][y]) {
-          positionY -= 0.25;
+          positionY /= 1.5;
+
           this.targets.push(`${positionX} ${positionY} ${positionZ}`);
         }
       }
