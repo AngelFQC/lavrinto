@@ -4,7 +4,12 @@
          :position="position"
          :rotation="rotation"
          :width="$constant('WALL_WIDTH')"
-         src="#wall"
+         material="src: #wall;
+                repeat: 0.8 1;
+                normalMap: #wall-normal;
+                normalTextureRepeat: 0.8 1;
+                roughnessMap: #wall-roughness;
+                roughnessTextureRepeat: 0.8 1"
          static-body></a-box>
 </template>
 

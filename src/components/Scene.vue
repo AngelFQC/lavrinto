@@ -13,7 +13,17 @@
 
     <labyrinth></labyrinth>
 
-    <a-plane height="52" position="0 0 -13" rotation="-90 0 0" src="#grass" static-body width="40"></a-plane>
+    <a-plane height="52"
+             position="0 0 -13"
+             rotation="-90 0 0"
+             static-body
+             width="40"
+             material="src: #grass;
+                       repeat: 8 8;
+                       normalMap: #grass-normal;
+                       normalTextureRepeat: 8 8;
+                       roughnessMap: #grass-roughness;
+                       roughnessTextureRepeat: 8 8"></a-plane>
 
     <a-sky color="skyblue"></a-sky>
   </a-scene>

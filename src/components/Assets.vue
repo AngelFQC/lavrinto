@@ -1,7 +1,12 @@
 <template>
   <a-assets>
-    <img src="https://aframe.io/sample-assets/assets/images/terrain/grasslight-big.jpg" id="grass">
-    <img src="textures/bricks.jpg" id="wall">
+    <img src="@/assets/textures/bricks.jpg" id="grass">
+    <img src="@/assets/textures/bricks_nrm.jpg" id="grass-normal">
+    <img src="@/assets/textures/bricks_nrm.jpg" id="grass-roughness">
+
+    <img src="@/assets/textures/bricks.jpg" id="wall">
+    <img src="@/assets/textures/bricks_nrm.jpg" id="wall-normal">
+    <img src="@/assets/textures/bricks_roughness.jpg" id="wall-roughness">
   </a-assets>
 </template>
 
