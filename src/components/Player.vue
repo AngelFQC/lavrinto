@@ -1,5 +1,6 @@
 <template>
-  <a-entity kinematic-body
+  <a-entity id="rig"
+            kinematic-body
             movement-controls
             position="-13 0 8.5">
 
@@ -32,8 +33,13 @@
                        color: #fff2e6"
                 positon="0 1 0"></a-entity>
 
-      <a-cursor postion="0 0 -0.9" color="#aed22d"></a-cursor>
-
+      <a-entity
+          cursor
+          material="color: #aed22d"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusOuter: 0.019; radiusInner: 0.01"
+          animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.5 0.5 0.5; to: 1 1 1"
+      ></a-entity>
     </a-entity>
 
   </a-entity>
