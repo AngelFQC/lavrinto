@@ -1,5 +1,5 @@
 <template>
-  <a-scene fog="type: linear; color: #ECECEC; far: 4.5; near: 0.25;">
+  <a-scene fog="type: linear; color: #ECECEC; far: 6; near: 1;">
 
     <assets></assets>
 
