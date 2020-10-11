@@ -27,10 +27,8 @@
               width="1"></a-text>
 
       <a-entity light="type: point;
-                       angle: 40;
-                       intensity: 1;
-                       decay: 15;
-                       distance: 100;
+                       decay: 1;
+                       distance: 20;
                        color: #fff2e6"
                 positon="0 1 0"></a-entity>
 
