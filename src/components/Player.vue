@@ -8,10 +8,10 @@
               position="0 1.6 0">
 
       <a-text id="txt-score"
-              :value="`Goals ${targetGoals} / ${targetsCount}`"
+              :value="`Score: ${targetGoals} / ${targetsCount}`"
               align="center"
               anchor="center"
-              color="#A83A21"
+              color="#aed22d"
               font="mozillavr"
               position="0 0.6 -0.8"
               width="3"></a-text>
@@ -32,7 +32,7 @@
                        color: #fff2e6"
                 positon="0 1 0"></a-entity>
 
-      <a-cursor postion="0 0 -0.9" color="#A83A21"></a-cursor>
+      <a-cursor postion="0 0 -0.9" color="#aed22d"></a-cursor>
 
     </a-entity>
 
