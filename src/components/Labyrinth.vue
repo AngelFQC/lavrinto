@@ -98,6 +98,7 @@ export default {
 
       if (this.$store.state.targetGoals === this.$store.state.targetsCount) {
         document.getElementById('txt-win').setAttribute('opacity', '1')
+        document.getElementById('txt-score').setAttribute('opacity', '0')
       }
     }
   }

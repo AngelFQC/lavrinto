@@ -1,5 +1,5 @@
 <template>
-  <a-scene fog="type: linear; color: #ECECEC; far: 6; near: 1;">
+  <a-scene>
 
     <assets></assets>
 
@@ -11,11 +11,11 @@
                 look-controls="pointerLockEnabled: true"
                 position="0 1.6 0">
 
-        <a-text id="score"
+        <a-text id="txt-score"
                 :value="`Goals ${targetGoals} / ${targetsCount}`"
                 align="center"
                 anchor="center"
-                color="black"
+                color="#A83A21"
                 font="mozillavr"
                 position="0 0.6 -0.8"
                 width="3"></a-text>
@@ -24,13 +24,21 @@
                 opacity="0"
                 align="center"
                 anchor="center"
-                color="#9fbc00"
+                color="#ff4d00"
                 font="mozillavr"
                 position="0 0.025 -0.1"
                 value="You win!"
                 width="1"></a-text>
 
-        <a-cursor postion="0 0 -1"></a-cursor>
+        <a-entity light="type: point;
+                         angle: 40;
+                         intensity: 1;
+                         decay: 15;
+                         distance: 100;
+                         color: #fff2e6"
+                  positon="0 1 0"></a-entity>
+
+        <a-cursor postion="0 0 -0.9" color="#A83A21"></a-cursor>
 
       </a-entity>
 
@@ -48,6 +56,18 @@
              position="0 0 -13"
              rotation="-90 0 0"
              static-body
+             width="40"></a-plane>
+
+    <a-plane height="52"
+             material="src: #grass;
+                       repeat: 8 8;
+                       normalMap: #grass-normal;
+                       normalTextureRepeat: 8 8;
+                       roughnessMap: #grass-roughness;
+                       roughnessTextureRepeat: 8 8"
+             :position="`0 ${$constant('WALL_HEIGHT')} -13`"
+             rotation="-90 0 0"
+             scale="1 1 -1"
              width="40"></a-plane>
 
     <a-sky color="skyblue"></a-sky>

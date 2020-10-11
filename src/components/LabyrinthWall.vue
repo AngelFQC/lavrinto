@@ -4,6 +4,7 @@
          :position="position"
          :rotation="rotation"
          :width="$constant('WALL_WIDTH')"
+         color="#e0f3ff"
          material="src: #wall;
                    repeat: 0.8 1;
                    normalMap: #wall-normal;

@@ -1,6 +1,6 @@
 <script>
 const Constants = {
-  WALL_HEIGHT: 4,
+  WALL_HEIGHT: 5,
   WALL_WIDTH: 3,
   WALL_DEPTH: 0.5,
 }
