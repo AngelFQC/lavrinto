@@ -14,7 +14,8 @@
               :position="targetPosition"
               color="yellow"
               radius="0.2"
-              static-body @click="targetClick"></a-sphere>
+              static-body
+              @click="targetClick"></a-sphere>
   </a-entity>
 </template>
 
