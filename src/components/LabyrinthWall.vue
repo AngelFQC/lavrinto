@@ -6,11 +6,11 @@
          :width="$constant('WALL_WIDTH')"
          color="#e0f3ff"
          material="src: #wall;
-                   repeat: 0.8 1;
+                   repeat: 2 2;
                    normalMap: #wall-normal;
-                   normalTextureRepeat: 0.8 1;
+                   normalTextureRepeat: 2 2;
                    roughnessMap: #wall-roughness;
-                   roughnessTextureRepeat: 0.8 1"
+                   roughnessTextureRepeat: 2 2"
          static-body></a-box>
 </template>
 

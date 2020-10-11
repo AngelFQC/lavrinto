@@ -9,11 +9,11 @@
 
     <a-plane height="52"
              material="src: #grass;
-                       repeat: 8 8;
+                       repeat: 25 25;
                        normalMap: #grass-normal;
-                       normalTextureRepeat: 8 8;
+                       normalTextureRepeat: 25 25;
                        roughnessMap: #grass-roughness;
-                       roughnessTextureRepeat: 8 8"
+                       roughnessTextureRepeat: 25 25"
              position="0 0 -13"
              rotation="-90 0 0"
              static-body
@@ -21,11 +21,11 @@
 
     <a-plane height="52"
              material="src: #grass;
-                       repeat: 8 8;
+                       repeat: 25 25;
                        normalMap: #grass-normal;
-                       normalTextureRepeat: 8 8;
+                       normalTextureRepeat: 25 25;
                        roughnessMap: #grass-roughness;
-                       roughnessTextureRepeat: 8 8"
+                       roughnessTextureRepeat: 25 25"
              :position="`0 ${$constant('WALL_HEIGHT')} -13`"
              rotation="-90 0 0"
              scale="1 1 -1"
