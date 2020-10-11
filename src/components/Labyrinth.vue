@@ -9,13 +9,18 @@
                     :position="wallPosition"
                     rotation="0 90 0"></labyrinth-wall>
 
-    <a-sphere v-for="(targetPosition, targetId) in targets"
-              :key="targetId"
-              :position="targetPosition"
-              color="yellow"
-              radius="0.2"
-              static-body
-              @click="targetClick"></a-sphere>
+    <a-torus v-for="(targetPosition, targetId) in targets"
+             :key="targetId"
+             :position="targetPosition"
+             @click="targetClick"
+             color="#2ac"
+             arc="360"
+             radius="0.2"
+             radius-tubular="0.05"
+             rotation="0 0 0"
+             animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 1500"
+             static-body></a-torus>
+
   </a-entity>
 </template>
 
