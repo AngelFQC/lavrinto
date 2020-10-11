@@ -5,7 +5,11 @@
     <a-entity kinematic-body movement-controls position="-13 0 8.5">
       <a-entity camera look-controls="pointerLockEnabled: true" position="0 1.6 0">
         <a-text id="score" align="center" anchor="center" color="black" font="mozillavr" position="0 0.6 -0.8"
-                :value="`${targetGoals} / ${targetsCount}`" visible="" width="3"></a-text>
+                :value="`Goals ${targetGoals} / ${targetsCount}`" visible="" width="3"></a-text>
+
+        <a-text id="txt-win" align="center" anchor="center" color="#9fbc00" font="mozillavr" opacity="0"
+                position="0 0.025 -0.1" value="You win!" width="1"></a-text>
+
         <a-cursor postion="0 0 -1"></a-cursor>
 
       </a-entity>

@@ -94,6 +94,10 @@ export default {
       this.$store.state.targetGoals++;
 
       event.target.remove();
+
+      if (this.$store.state.targetGoals === this.$store.state.targetsCount) {
+        document.getElementById('txt-win').setAttribute('opacity', '1')
+      }
     }
   }
 }
