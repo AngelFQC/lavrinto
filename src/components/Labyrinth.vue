@@ -22,41 +22,7 @@
 <script>
 import LabyrinthWall from "@/components/LabyrinthWall";
 
-const map = [
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-  [2, 0, 3, 0, 0, 2, 3, 0, 0, 2, 0, 2, 2],
-  [3, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0],
-  [2, 2, 0, 2, 0, 2, 0, 0, 2, 0, 2, 2, 2],
-  [0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 3],
-  [2, 0, 0, 0, 2, 2, 0, 2, 2, 0, 0, 2, 2],
-  [1, 1, 1, 1, 0, 1, 0, 3, 1, 0, 1, 0],
-  [2, 0, 2, 0, 2, 3, 2, 2, 0, 2, 0, 0, 2],
-  [0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1],
-  [2, 2, 2, 2, 3, 0, 2, 0, 0, 2, 0, 0, 2],
-  [0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0],
-  [2, 2, 0, 2, 0, 2, 2, 0, 2, 0, 0, 2, 2],
-  [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 3],
-  [2, 2, 3, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2],
-  [0, 1, 0, 0, 0, 0, 0, 0, 1, 3, 0, 0],
-  [2, 0, 2, 2, 2, 0, 0, 2, 0, 0, 2, 0, 2],
-  [1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1],
-  [2, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 3, 2],
-  [3, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0],
-  [2, 2, 2, 2, 2, 3, 2, 0, 0, 2, 0, 2, 2],
-  [0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0],
-  [2, 2, 2, 0, 0, 2, 0, 2, 2, 0, 2, 2, 2],
-  [0, 3, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0],
-  [2, 2, 0, 2, 0, 2, 2, 0, 0, 2, 3, 2, 2],
-  [0, 1, 0, 0, 3, 0, 0, 1, 1, 1, 0, 0],
-  [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 2],
-  [1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0],
-  [2, 0, 2, 0, 0, 0, 3, 0, 0, 2, 0, 0, 2],
-  [0, 1, 0, 1, 1, 1, 1, 1, 1, 3, 1, 0],
-  [2, 0, 0, 3, 2, 0, 0, 0, 2, 0, 2, 0, 2],
-  [0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1],
-  [2, 3, 0, 0, 2, 0, 0, 0, 0, 2, 0, 3, 2],
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-];
+import firstMap from "@/maps/first";
 
 export default {
   name: "Labyrinth",
@@ -71,17 +37,17 @@ export default {
     }
   },
   created() {
-    for (let x = 0; x < map.length; x++) {
-      for (let y = 0; y < map[x].length; y++) {
-        let positionX = (y - map[x].length / 2) * this.$constant('WALL_WIDTH'),
+    for (let x = 0; x < firstMap.length; x++) {
+      for (let y = 0; y < firstMap[x].length; y++) {
+        let positionX = (y - firstMap[x].length / 2) * this.$constant('WALL_WIDTH'),
             positionY = this.$constant('WALL_HEIGHT') / 2,
-            positionZ = (x - map.length / 2) * this.$constant('WALL_WIDTH') / 2;
+            positionZ = (x - firstMap.length / 2) * this.$constant('WALL_WIDTH') / 2;
 
-        if (1 === map[x][y]) {
+        if (1 === firstMap[x][y]) {
           this.wallsX.push(`${positionX} ${positionY} ${positionZ}`);
-        } else if (2 === map[x][y]) {
+        } else if (2 === firstMap[x][y]) {
           this.wallsY.push(`${positionX} ${positionY} ${positionZ}`);
-        } else if (3 === map[x][y]) {
+        } else if (3 === firstMap[x][y]) {
           positionY -= 0.25;
           this.targets.push(`${positionX} ${positionY} ${positionZ}`);
         }
@@ -104,6 +70,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
