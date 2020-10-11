@@ -1,9 +1,9 @@
 <template>
-  <a-box :depth="$constant('WALL_DEPTH')"
-         :height="$constant('WALL_HEIGHT')"
+  <a-box :depth="this.$constant('WALL_DEPTH')"
+         :height="this.$constant('WALL_HEIGHT')"
          :position="position"
          :rotation="rotation"
-         :width="$constant('WALL_WIDTH')"
+         :width="this.$constant('WALL_WIDTH')"
          color="#e0f3ff"
          material="src: #wall;
                    repeat: 2 2;

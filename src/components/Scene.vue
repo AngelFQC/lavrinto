@@ -26,7 +26,7 @@
                        normalTextureRepeat: 25 25;
                        roughnessMap: #grass-roughness;
                        roughnessTextureRepeat: 25 25"
-             :position="`0 ${$constant('WALL_HEIGHT')} -13`"
+             :position="`0 ${this.$constant('WALL_HEIGHT')} -13`"
              rotation="-90 0 0"
              scale="1 1 -1"
              width="40"></a-plane>
