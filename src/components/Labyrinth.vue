@@ -19,6 +19,7 @@
              radius-tubular="0.05"
              rotation="0 0 0"
              animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 1500"
+             shadow="cast: true"
              static-body></a-torus>
 
   </a-entity>

@@ -7,6 +7,7 @@
          material="src: #wall;
                    normalMap: #wall-normal;
                    roughnessMap: #wall-roughness"
+         shadow="receive: true; cast: true"
          static-body></a-box>
 </template>
 
