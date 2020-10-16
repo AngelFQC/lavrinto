@@ -28,11 +28,10 @@
               width="1"></a-text>
 
       <a-entity light="type: point;
-                       castShadow: true;
                        decay: 1;
                        distance: 20;
                        color: #fff2e6"
-                position="0 2 -0.2"></a-entity>
+                position="0 1 0"></a-entity>
 
       <a-entity
           cursor

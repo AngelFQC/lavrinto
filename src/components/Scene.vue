@@ -18,7 +18,6 @@
              position="0 0 -13"
              rotation="-90 0 0"
              static-body
-             shadow="receive: true"
              width="40"></a-plane>
 
     <a-plane height="52"
