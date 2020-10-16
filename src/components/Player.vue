@@ -31,7 +31,7 @@
                        decay: 1;
                        distance: 20;
                        color: #fff2e6"
-                positon="0 1 0"></a-entity>
+                position="0 1 0"></a-entity>
 
       <a-entity
           cursor
